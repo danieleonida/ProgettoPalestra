@@ -1,0 +1,302 @@
+/*---------------------------------------------header-------------------------------------------------------------------*/
+body {
+    background-color: antiquewhite;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+.header ul li:hover {
+    background-color: rgb(18, 18, 18);
+}
+
+.menu a {
+    color: rgb(128, 128, 128);
+
+
+}
+
+.ciccio {
+    z-index: -1;
+    bottom: 8%;
+    position: absolute;
+
+}
+
+.header {
+    top: 0px;
+    background-color: #212121;
+    position: sticky;
+    z-index: 2;
+    border: 1px gray solid;
+}
+
+@media screen and (max-width: 768px) {
+    .header li {
+        font-size: 10px;
+    }
+}
+
+.header .menu a {
+    text-decoration: none;
+    
+}
+
+.header li {
+    padding: 2%;
+    list-style-type: none;
+    float: right;
+  
+}
+
+.header .menu {
+    margin: 0%;
+    overflow: hidden;
+
+}
+
+.logo {
+    float: right;
+    width: 30%;
+    border-radius: 50%;
+    margin: 7%;
+
+
+
+}
+
+/*----------------------immagine sotto header------------------------------*/
+
+.primo {
+    width: 100%;
+    min-height: 60vw;
+    position: relative;
+    background-image: url(immagini/peso.jpg);
+    background-size: cover;
+}
+
+.scritta {
+    display: inline;
+    color: rgba(255, 0, 0, 0.808);
+    font-family: fantasy;
+    font-size: 6vw;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}
+
+/*-----------------------------la nostra storia----------------------*/
+.contenitore {
+    width: 100%;
+    min-height: 8vw;
+
+
+}
+
+.contenitore h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    color: gray;
+    background-color: #181818;
+    text-decoration: none;
+    margin-top: 0.5%;
+}
+
+
+
+.p1 {
+
+   
+    font-family: 'Courier New', Courier, monospace;
+    width: 70%;
+    height: 20%;
+    float: right;
+    margin-right: 5%;
+ 
+}
+
+.p2 {
+    float: left;
+    font-family: 'Courier New', Courier, monospace;
+    width: 70%;
+    height: 20%;
+    margin-left: 8%;
+    margin-top: 2%;
+  
+}
+
+
+.box1 {
+    background-image: url(immagini/furno1.jpg);
+    background-size: cover;
+    border-radius: 50%;
+    margin-left: 4%;
+    float: left;
+    min-height: 10em;
+    width: 10em;
+
+}
+
+.box2 {
+    background-image: url(immagini/luciano.jpg);
+    background-size: cover;
+    border-radius: 50%;
+    width: 10em;
+    height: 10em;
+    float: right;
+    margin-right: 5%;
+    margin-top: 2%;
+
+
+}
+
+
+/*------------------------------------------ABBONAMENTI----------------------------------------------------*/
+
+.secondo {
+    width: 100%;
+    min-height: 50vw;
+    background-image: url(immagini/sfondoragazza.png);
+    background-size: cover;
+    margin-top: 19%;
+    display: flex;
+
+}
+
+
+.abbonamenti {
+    background-color: antiquewhite;
+    color: #181818;
+    width: 75%;
+    height: 20em;
+    border: #181818 1px solid;
+    opacity: 0.8;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    text-align: center;
+    margin-top: 20%;
+    margin-left: 2%;
+    margin-right: 2%;
+
+}
+
+/*----------------------------------------------FOOTER---------------------------------------------------------*/
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 4%;
+    width: 100%;
+    height: 30%;
+    background-color: #212121;
+    text-align: center;
+
+
+
+}
+
+.footer .box {
+
+    height: 85%;
+    color: gray;
+    margin-left: 8%;
+    margin: 5%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.footer a{
+    text-decoration: none;
+}
+.footer .box li {
+    list-style-type: none;
+
+}
+
+.footer ul {
+    padding: 0px;
+}
+
+.footer table {
+
+    width: 100%;
+}
+
+/*-------------------media query----------------------------*/
+
+
+@media screen and (max-width: 768px) {
+    .footer{
+        height: 50%;
+    }
+    .footer table{
+        font-size: 5px;
+    }
+    .footer p{
+        font-size: 5px;
+    }
+    .footer a{
+        font-size: 5px;
+    }
+ 
+   
+   .contenitore {
+       display: flex;
+       flex-direction: column;
+       margin: 0px;
+       
+   }
+   .p2{
+       font-size: 10px;
+   }
+   .p1 {
+       margin-left: 8%;
+       font-size: 10px;
+
+   }
+
+   .abbonamenti {
+       max-height: 8em;
+       margin-bottom: 45px;
+   }
+ 
+
+}
+@media screen and (min-width: 768px) {
+   .abbonamenti p{
+       font-size: 40px;
+   }
+}
+
+/*----------------------------formulario di login------------------------**/
+#login{
+    background-color: rgba(156, 24, 24, 0.877);
+    padding: 5%;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+#login form{
+    width: 50%;
+    padding: 2%;
+    background-color: white;
+    text-align: center;
+
+}
+#login input{
+   width: 70%;
+   height: 20%;
+   display: block;
+   margin-top:  3%;
+   margin-left: 15%;
+}
+#login #exit{
+    background-color: red;
+    color: white;
+    float: right;
+}
+#contenitoreForm{
+    width: 50%;
+    height: 50%;
+}
